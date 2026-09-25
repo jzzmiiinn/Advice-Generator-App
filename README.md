@@ -1,75 +1,66 @@
-# React + TypeScript + Vite
+# Advice Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive advice generator built with **React, TypeScript, and Tailwind CSS**. Users can generate random pieces of advice using the Advice Slip API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Generate random advice
+* Display advice ID and text
+* Responsive design
+* Loading state
+* Error handling
+* Persist advice with localStorage
+* Interactive dice button
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
+* Advice Slip API
+* pnpm
 
-## Expanding the ESLint configuration
+## What I Learned
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Managing state with React `useState`
+* Fetching data from an API
+* Using `useEffect` for initial data loading
+* Passing data and functions through props
+* Handling loading and error states
+* Using `localStorage` to persist data
+* Creating responsive layouts with Tailwind CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Clone the repository:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/jzzmiiinn/Advice-Generator-App.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd Advice-Generator-App
 ```
+
+Install dependencies:
+
+```bash
+pnpm install
+```
+
+Start the development server:
+
+```bash
+pnpm dev
+```
+
+## Challenge
+
+This project was built as part of a **Frontend Mentor** challenge to practice building responsive interfaces with React, TypeScript, and Tailwind CSS.
+
+## Author
+
+GitHub: [@jzzmiiinn](https://github.com/jzzmiiinn)
